@@ -143,18 +143,10 @@ void Test() {
             assert(deletion_counter == 1u);
         }
     }
+
+    std::cout << "All Tests Done!" << std::endl;
 }
 
 int main() {
-   // Test();
-    SingleLinkedList<int> a{1,2,3,4};
-    for (const auto& node : a) {
-        std::cout << node << std::endl;
-    }
-
-   
-    SingleLinkedList<int> b(a);
-    for (const auto& node : b) {
-        std::cout << node << std::endl;
-    }
+   Test();
 }
